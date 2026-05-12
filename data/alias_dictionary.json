@@ -1,0 +1,81 @@
+{
+  "_metadata": {
+    "version": "v1.0",
+    "purpose": "한국 LP출자 도메인 동의어·alias 사전. RAG query expansion 및 청크 검색에 사용.",
+    "perspective": "LP_조합원",
+    "note": "Gemma 4 e4b 등 영어 중심 LLM의 한국 금융 도메인 동의어 처리 한계 보완용"
+  },
+  "investment_actors": {
+    "LP출자": ["조합원 출자", "유한책임사원 출자", "펀드 출자", "간접 투자", "출자"],
+    "GP": ["업무집행조합원", "운용사", "자산운용사", "일반사원", "운용 GP", "Sponsor"],
+    "LP": ["유한책임사원", "조합원", "출자자", "Limited Partner"],
+    "출자대상펀드": ["피투자펀드", "투자대상펀드", "RecipientFund"],
+    "최종투자대상": ["피투자회사", "투자대상회사", "Portfolio Company", "최종 투자처"]
+  },
+  "fund_types": {
+    "PEF": ["사모투자합자회사", "사모펀드", "경영참여형 사모집합투자기구", "Private Equity Fund"],
+    "투자합자조합": ["투자합자조합", "PEF 투자합자조합"],
+    "벤처투자조합": ["벤처조합", "벤처투자펀드", "VC조합"],
+    "신기술사업투자조합": ["신기술조합", "신기술펀드", "NTF"],
+    "투자신탁": ["수익증권", "Investment Trust"],
+    "투자회사": ["뮤추얼펀드", "Investment Company"],
+    "사모집합투자기구": ["사모펀드", "Private Fund"],
+    "REITs": ["부동산투자회사", "리츠"]
+  },
+  "products": {
+    "LP출자": ["조합원 출자", "유한책임사원 출자", "펀드 출자"],
+    "인수금융": ["M&A 금융", "Acquisition Finance", "LBO 대출", "인수자금 대출"],
+    "메자닌": ["전환사채", "신주인수권부사채", "교환사채", "Mezzanine"],
+    "직접투자": ["직접 인수", "Direct Investment"]
+  },
+  "regulatory_concepts": {
+    "신용공여한도": ["동일차주 한도", "여신한도", "대주주 한도", "신용공여 한도", "Total Exposure Limit", "토탈 익스포져"],
+    "RWA": ["위험가중자산", "Risk Weighted Asset", "위험가중치"],
+    "위험가중치": ["RW", "Risk Weight", "리스크 웨이트"],
+    "익스포져": ["Exposure", "노출액", "익스포저"],
+    "표준방법": ["Standardised Approach", "SA", "표준 접근법"],
+    "내부등급법": ["IRB", "Internal Ratings-Based", "내부평가법"],
+    "자기자본비율": ["BIS 비율", "자본비율", "Capital Adequacy Ratio", "CAR"],
+    "대체투자": ["Alternative Investment", "AI", "대체자산투자"],
+    "자산건전성분류": ["건전성분류", "건전성 등급", "자산분류", "Asset Quality Classification"],
+    "적합성원칙": ["Suitability", "Suitability Rule"],
+    "설명의무": ["Disclosure", "설명 의무", "Explanation Duty"],
+    "고객확인": ["KYC", "Know Your Customer", "고객확인의무", "CDD"],
+    "자금세탁방지": ["AML", "Anti-Money Laundering", "자금세탁 방지"],
+    "내부통제": ["Internal Control", "내부 통제"]
+  },
+  "process_steps": {
+    "거래상대방 식별": ["고객등록", "거래상대방 등록", "Customer Registration"],
+    "투자상담": ["상담", "Investment Consultation", "사전 상담"],
+    "사전심사": ["사전협의", "Pre-screening", "Preliminary Screening", "사전 검토"],
+    "예비검토": ["Preliminary Review", "1차 검토"],
+    "실무협의회": ["실무협의", "Working Level Review", "실무 검토"],
+    "투자품의": ["품의", "Investment Proposal", "Proposal"],
+    "한도약정": ["약정", "Commitment", "약정 체결"],
+    "실행품의": ["개별품의", "Drawdown Proposal"],
+    "사후관리": ["Post Management", "사후 관리"]
+  },
+  "asset_classes_byulpyo3": {
+    "중앙정부 익스포져": ["국채", "국가 익스포져", "Sovereign", "Central Government"],
+    "은행 익스포져": ["은행 차주", "Bank Exposure"],
+    "기업 익스포져": ["회사 익스포져", "Corporate Exposure", "기업 차주"],
+    "주식 익스포져": ["Equity Exposure", "지분 익스포져"],
+    "집합투자증권 익스포져": ["펀드 익스포져", "수익증권", "집합투자기구 익스포져", "CIS Exposure", "LP출자 RWA"],
+    "소매 익스포져": ["Retail Exposure", "리테일", "개인 익스포져"],
+    "주거용주택담보 익스포져": ["주담대", "Residential Mortgage", "주택 담보"],
+    "상업용부동산 익스포져": ["CRE", "Commercial Real Estate"],
+    "부동산개발금융": ["부동산 PF", "PF", "Project Financing", "브릿지론"]
+  },
+  "laws": {
+    "자본시장법": ["자본시장과 금융투자업에 관한 법률", "CMFA", "Capital Markets Act"],
+    "여전법": ["여신전문금융업법", "SFA", "여전금융업법"],
+    "은행법": ["BA", "Banking Act"],
+    "은행업감독규정": ["감독규정", "BSR"],
+    "은행업감독업무시행세칙": ["시행세칙", "BSER", "은감세칙"],
+    "특금법": ["특정금융정보법", "AMLA", "자금세탁방지법"],
+    "신용정보법": ["CIA", "Credit Information Act"],
+    "금소법": ["금융소비자보호법", "FCPA"],
+    "벤처투자법": ["VIA", "벤처기업육성에 관한 특별조치법"],
+    "대체투자모범규준": ["여전사 대체투자 리스크관리 모범규준", "SFAAI", "AI Best Practices"]
+  }
+}
