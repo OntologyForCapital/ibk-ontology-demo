@@ -3,6 +3,7 @@
 기존 Streamlit 시연 앱은 HF Space(FastAPI+React)로 이전했고,
 이 Streamlit Cloud 페이지는 그쪽으로 안내하는 랜딩 역할만 한다.
 """
+import os
 import streamlit as st
 
 HF_URL = "https://huggingface.co/spaces/ForStream/ontology-prototype"
@@ -23,6 +24,18 @@ st.info("ℹ️ 데모가 **Hugging Face Space**로 이전했습니다. 아래 �
 # ── 라이브 데모 ───────────────────────────────────────────────
 st.markdown("### 🔗 라이브 데모")
 st.link_button("👉  Hugging Face Space에서 실행", HF_URL, type="primary", use_container_width=True)
+
+_PDF = os.path.join(os.path.dirname(os.path.abspath(__file__)), "LP출자_온톨로지_제안.pdf")
+if os.path.exists(_PDF):
+    with open(_PDF, "rb") as _f:
+        st.download_button(
+            "📄  제안서 PDF 다운로드 (LP출자 온톨로지)",
+            _f.read(),
+            file_name="LP출자_온톨로지_제안.pdf",
+            mime="application/pdf",
+            use_container_width=True,
+        )
+
 st.markdown(
     "→ **FastAPI + React 데모 콘솔**로 연결됩니다. 3개 탭(설명 / 테스트 / 데이터 관리)에서, "
     "같은 질문에 대해 **Python(결정론적) · Sonnet · Gemma** 세 방식의 답변을 나란히 비교할 수 있습니다."
